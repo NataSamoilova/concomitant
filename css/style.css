@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'PT Serif', serif;
+  background-color: #1f1f1f;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.block {
+  padding: 3%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+.block-header {
+  padding: 0 3% 3% 3%;
+  margin: 0 auto;
+  max-width: 960px;
+}
+.block-bg-white {
+  background-color: #ffffff;
+}
+.block-brd-green {
+  border-top: 5px solid #81b300;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo a {
+  text-decoration: none;
+  color: #333333;
+}
+.header__logo h1 {
+  font-weight: 400;
+  font-size: 46px;
+  margin-bottom: 10px;
+  margin-top: 7%;
+}
+.header__logo p {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+}
+.header__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__nav-icons {
+  padding: 0 10px 10px 10px;
+  background-color: #81b300;
+  border-radius: 0 0 35px 35px ;
+}
+.header__nav-icons .header__icons-bg {
+  width: 32px;
+  height: 32px;
+  background-color: #1f1f1f;
+  border-radius: 50%;
+  padding: 5px;
+  float: left;
+}
+.header__nav-icons .header__icons-bg a i {
+  color: #ffffff;
+  padding: 5px;
+  font-size: 24px;
+}
+.header__nav-icons .header__icons-bg:not(:last-child) {
+  margin-right: 10px;
+}
+.header__nav-icons .header__icons-bg:hover {
+  background-color: #18adc2;
+}
+.header__nav-menu li {
+  list-style: none;
+  padding: 0 5px;
+  float: left;
+}
+.header__nav-menu li a {
+  text-decoration: none;
+  color: #81b300;
+  font-size: 14px;
+}
+.header__nav-menu li a:hover {
+  color: #1f1f1f;
+}
+.header__nav-menu li:not(:first-child) {
+  border-left: 1px solid #81b300;
+}
