@@ -142,7 +142,22 @@ header {
 .nav form input[type="submit"]:hover {
   color: #7f7f7f;
 }
-/*Search*/
+/*Slider*/
+.slider .preview {
+  width: 880px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  outline: 10px solid #c4c7c2;
+  background-color: #1f1f1f;
+  margin: 20px auto;
+}
+.slider .preview p {
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: bold;
+}
 .servises,
 .latest,
 .footer__content {
