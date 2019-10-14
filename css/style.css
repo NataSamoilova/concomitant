@@ -147,6 +147,7 @@ body {
 /** Slider **/
 .slider {
   background-color: #f2f2f2;
+  padding-bottom: 40px;
 }
 .slider .preview {
   width: 90%;
@@ -154,12 +155,52 @@ body {
   align-items: center;
   outline: 10px solid #ffffff;
   background-color: #1f1f1f;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 .slider .preview img {
   max-width: 880px;
   height: auto;
 }
+.slider {
+  text-align: center;
+}
+.slider .b-controls {
+  margin: 0 auto;
+}
+.slider .b-controls .b-control__circle {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 5px;
+}
+.slider .b-controls .b-control__circle-big {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-color: #333;
+  border-radius: 50%;
+  margin-bottom: 2px;
+  position: relative;
+}
+.slider .b-controls .b-control__circle-big i {
+  position: absolute;
+  color: #ffffff;
+  font-size: 15px;
+  left: 7px;
+  top: 3px;
+}
+.slider .b-controls .b-control__circle-big:first-child i {
+  left: 5px;
+}
+.slider .b-controls .b-control__circle-active {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+/** CONTENT **/
 .servises,
 .latest,
 .footer__content {
