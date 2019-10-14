@@ -4,12 +4,31 @@
 }
 body {
   font-family: 'PT Serif', serif;
-  background-color: #1f1f1f;
 }
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+.wr-green {
+  width: 100%;
+  background: #81b300;
+}
+.wr-white {
+  width: 100%;
+  background: #ffffff;
+}
+.wr-lgray {
+  width: 100%;
+  background: #f2f2f2;
+}
+.wr-gray {
+  width: 100%;
+  background: #3b3b3b;
+}
+.wr-dgray {
+  width: 100%;
+  background: #2e2e2e;
 }
 .block {
   padding: 2% 2%;

@@ -7,13 +7,37 @@
 
 body {
     font-family: 'PT Serif', serif;
-    background-color: #1f1f1f;
 }
 
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+.wr-green {
+    width: 100%;
+    background: #81b300;
+}
+
+.wr-white {
+    width: 100%;
+    background: #ffffff;
+}
+
+.wr-lgray {
+    width: 100%;
+    background: #f2f2f2;
+}
+
+.wr-gray {
+    width: 100%;
+    background: #3b3b3b;
+}
+
+.wr-dgray {
+    width: 100%;
+    background: #2e2e2e;
 }
 
 .block {
@@ -190,7 +214,7 @@ body {
 .slider {
     background-color: #f2f2f2;
     padding-bottom: 40px;
- 
+
     .preview {
         width: 90%;
         display: flex;
@@ -198,7 +222,7 @@ body {
         outline: 10px solid #ffffff;
         background-color: #1f1f1f;
         margin: 40px auto;
-        
+
         img {
             max-width: 880px;
             height: auto;
@@ -206,11 +230,13 @@ body {
     }
 }
 
-.slider{
+.slider {
     text-align: center;
-    .b-controls{
+
+    .b-controls {
         margin: 0 auto;
-         .b-control__circle{
+
+        .b-control__circle {
             width: 12px;
             height: 12px;
             display: inline-block;
@@ -218,7 +244,8 @@ body {
             border-radius: 50%;
             margin: 5px;
         }
-        .b-control__circle-big{
+
+        .b-control__circle-big {
             width: 20px;
             height: 20px;
             display: inline-block;
@@ -226,7 +253,8 @@ body {
             border-radius: 50%;
             margin-bottom: 2px;
             position: relative;
-            i{
+
+            i {
                 position: absolute;
                 color: #ffffff;
                 font-size: 15px;
@@ -235,10 +263,12 @@ body {
             }
 
         }
-        .b-control__circle-big:first-child i{
+
+        .b-control__circle-big:first-child i {
             left: 5px;
         }
-        .b-control__circle-active{
+
+        .b-control__circle-active {
             width: 10px;
             height: 10px;
             background-color: #fff;
@@ -438,6 +468,7 @@ body {
     .nav {
         grid-template-columns: 1fr;
         justify-items: center;
+
         ul {
             li:nth-child(n) {
                 float: none;
