@@ -39,6 +39,7 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .header__logo {
@@ -62,15 +63,18 @@ header {
 }
 
 .header__nav {
-    display: flex;
+   /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
 .header__nav-icons {
     padding: 0 10px 10px 10px;
     background-color: #81b300;
     border-radius: 0 0 35px 35px;
+    position: absolute;
+    top: 0;
+    right: 20px;
 
     .header__icons-bg {
         width: 32px;
@@ -99,6 +103,7 @@ header {
 }
 
 .header__nav-menu {
+    
     li {
         list-style: none;
         padding: 0 5px;
@@ -189,19 +194,15 @@ header {
     background-color: #f2f2f2;
 
     .preview {
-        width: 880px;
-        height: 360px;
+        width: 90%;
         display: flex;
         align-items: center;
         outline: 10px solid #ffffff;
         background-color: #1f1f1f;
         margin: 20px auto;
-
-        p {
-            margin: 0 auto;
-            color: #ffffff;
-            font-size: 26px;
-            font-weight: bold;
+        img{
+            max-width: 880px;
+            height: auto;
         }
     }
 }
@@ -209,8 +210,11 @@ header {
 .servises,
 .latest,
 .footer__content {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    /*display: flex;
+    justify-content: space-around;*/
 }
 
 .servises {
@@ -218,7 +222,7 @@ header {
     padding-bottom: 0;
 
     .servises__article {
-        width: 22%;
+        /*width: 22%;*/
         border-bottom: 1px solid #e2e2e2;
 
         img {
@@ -240,7 +244,7 @@ header {
 }
 
 .latest__article {
-    width: 22%;
+    /*width: 22%;*/
 
     .latest__article_frame {
         margin: 20px auto;
@@ -250,13 +254,6 @@ header {
         outline: 4px solid #a8a6a6;
         display: flex;
         align-items: center;
-
-        .latest__article_frame_p {
-            font-size: 16px;
-            font-weight: bold;
-            color: #ffffff;
-            margin: 0 auto;
-        }
     }
 
     h2 {
@@ -296,7 +293,7 @@ header {
     }
 
     .footer__content_section {
-        width: 21%;
+        /*width: 21%;*/
 
         .footer__content_section_title {
             margin-bottom: 30px;

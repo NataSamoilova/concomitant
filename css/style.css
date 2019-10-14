@@ -30,6 +30,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .header__logo a {
   text-decoration: none;
@@ -47,14 +48,17 @@ header {
   font-weight: 400;
 }
 .header__nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
 }
 .header__nav-icons {
   padding: 0 10px 10px 10px;
   background-color: #81b300;
   border-radius: 0 0 35px 35px;
+  position: absolute;
+  top: 0;
+  right: 20px;
 }
 .header__nav-icons .header__icons-bg {
   width: 32px;
@@ -147,32 +151,32 @@ header {
   background-color: #f2f2f2;
 }
 .slider .preview {
-  width: 880px;
-  height: 360px;
+  width: 90%;
   display: flex;
   align-items: center;
   outline: 10px solid #ffffff;
   background-color: #1f1f1f;
   margin: 20px auto;
 }
-.slider .preview p {
-  margin: 0 auto;
-  color: #ffffff;
-  font-size: 26px;
-  font-weight: bold;
+.slider .preview img {
+  max-width: 880px;
+  height: auto;
 }
 .servises,
 .latest,
 .footer__content {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  /*display: flex;
+    justify-content: space-around;*/
 }
 .servises {
   text-align: center;
   padding-bottom: 0;
 }
 .servises .servises__article {
-  width: 22%;
+  /*width: 22%;*/
   border-bottom: 1px solid #e2e2e2;
 }
 .servises .servises__article img {
@@ -189,7 +193,7 @@ header {
   margin-bottom: 50px;
 }
 .latest__article {
-  width: 22%;
+  /*width: 22%;*/
 }
 .latest__article .latest__article_frame {
   margin: 20px auto;
@@ -199,12 +203,6 @@ header {
   outline: 4px solid #a8a6a6;
   display: flex;
   align-items: center;
-}
-.latest__article .latest__article_frame .latest__article_frame_p {
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  margin: 0 auto;
 }
 .latest__article h2 {
   margin-bottom: 10px;
@@ -236,7 +234,7 @@ header {
   font-size: 12px;
 }
 .footer__content .footer__content_section {
-  width: 21%;
+  /*width: 21%;*/
 }
 .footer__content .footer__content_section .footer__content_section_title {
   margin-bottom: 30px;
